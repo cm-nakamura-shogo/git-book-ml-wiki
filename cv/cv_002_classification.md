@@ -2,43 +2,43 @@
 
 ## 主要なモデル一覧
 
-- [1989.xx.xx] [LeNet](./cv_002_classification/lenet.md) / [論文](https://direct.mit.edu/neco/article-abstract/1/4/541/5515/Backpropagation-Applied-to-Handwritten-Zip-Code?redirectedFrom=fulltext)
-- [2012.09.xx] [AlexNet](./cv_002_classification/alexnet.md) / [論文](https://dl.acm.org/doi/abs/10.1145/3065386)
-- [2014.09.xx] [VGGNet](./cv_002_classification/vgg.md) / [論文](https://arxiv.org/abs/1409.1556)
-- [2014.09.xx] GoogLeNet(Inception v1) / [論文](https://arxiv.org/abs/1409.4842)
-- [2015.12.xx] [ResNet](./cv_002_classification/resnet.md) / [論文](https://arxiv.org/abs/1512.03385)
-- [2016.02.xx] Inception-v4 / [論文](https://arxiv.org/abs/1602.07261)
-- [2016.02.xx] SqueezeNet / [論文](https://arxiv.org/abs/1602.07360)
-- [2016.08.25] [DenseNet](./cv_002_classification/densenet.md) / [論文](https://arxiv.org/abs/1608.06993)
+- [LeNet 1989.xx.xx](./cv_002_classification/lenet.md) / [論文](https://direct.mit.edu/neco/article-abstract/1/4/541/5515/Backpropagation-Applied-to-Handwritten-Zip-Code?redirectedFrom=fulltext)
+- [AlexNet 2012.09.xx](./cv_002_classification/alexnet.md) / [論文](https://dl.acm.org/doi/abs/10.1145/3065386)
+- [VGGNet 2014.09.xx](./cv_002_classification/vgg.md) / [論文](https://arxiv.org/abs/1409.1556)
+- GoogLeNet(Inception-v1) 2014.09.xx / [論文](https://arxiv.org/abs/1409.4842)
+- [ResNet 2015.12.xx](./cv_002_classification/resnet.md) / [論文](https://arxiv.org/abs/1512.03385)
+- Inception-v4 2016.02.xx / [論文](https://arxiv.org/abs/1602.07261)
+- SqueezeNet 2016.02.xx / [論文](https://arxiv.org/abs/1602.07360)
+- [DenseNet 2016.08.25](./cv_002_classification/densenet.md) / [論文](https://arxiv.org/abs/1608.06993)
   - ResNetを進化させ、より効率的に深くまで情報を伝搬させるdense blockを構成。
   - dense blockはそのレイヤまでのblock内すべての出力を入力として用いる。
   - また連結方法は加算ではなく、concatenateすることにより情報が消えることを防ぐ。
   - ResNetよりモデル規模を縮小し、性能も改善。
 
-- [2016.01.xx] Xception / [論文](https://arxiv.org/abs/1610.02357)
-- [2016.11.xx] [ResNeXt](./cv_002_classification/resnext.md) / [論文](https://arxiv.org/abs/1611.05431v2)
-- [2017.04.xx] [MobileNet](./cv_002_classification/mobilenet.md) / [論文](https://arxiv.org/abs/1704.04861)
-- [2017.07.xx] ShuffleNet / [論文](https://arxiv.org/abs/1707.01083)
-- [2017.09.xx] SENet / [論文](https://arxiv.org/abs/1709.01507)
-- [2018.01.xx] [MobileNetV2](./cv_002_classification/mobilenet_v2.md) / [論文](https://arxiv.org/abs/1801.04381)
-- [2018.07.xx] [Big-Little Network](./cv_002_classification/big_little.md) / [論文](https://arxiv.org/abs/1807.03848)
-- [2018.07.xx] ShuffleNetV2 / [論文](https://arxiv.org/abs/1807.11164)
-- [2018.07.xx] Mnasnet / [論文](https://arxiv.org/abs/1807.11626)
-- [2019.04.xx] [Octave Convolution](./cv_002_classification/octave.md) / [論文](https://arxiv.org/abs/1904.05049)
-- [2019.05.xx] MobileNetV3 / [論文](https://arxiv.org/abs/1905.02244)
-- [2019.05.xx] [EfficientNet](./cv_002_classification/efficientnet.md) / [論文](https://arxiv.org/abs/1905.11946)
-- [2019.07.xx] [MixNet](./cv_002_classification/mixnet.md) / [論文](https://arxiv.org/abs/1907.09595)
-- [2019.11.11] Noisy Student / [論文](https://arxiv.org/abs/1911.04252)
-- [2019.11.27] [CSPNet](./cv_002_classification/cspnet.md) / [論文](https://arxiv.org/abs/1911.11929)
+- Xception 2016.01.xx / [論文](https://arxiv.org/abs/1610.02357)
+- [ResNeXt 2016.11.xx](./cv_002_classification/resnext.md) / [論文](https://arxiv.org/abs/1611.05431v2)
+- [MobileNet 2017.04.xx](./cv_002_classification/mobilenet.md) / [論文](https://arxiv.org/abs/1704.04861)
+- ShuffleNet 2017.07.xx / [論文](https://arxiv.org/abs/1707.01083)
+- SENet 2017.09.xx / [論文](https://arxiv.org/abs/1709.01507)
+- [MobileNetV2 2018.01.xx](./cv_002_classification/mobilenet_v2.md) / [論文](https://arxiv.org/abs/1801.04381)
+- [Big-Little Network 2018.07.xx](./cv_002_classification/big_little.md) / [論文](https://arxiv.org/abs/1807.03848)
+- ShuffleNetV2 2018.07.xx / [論文](https://arxiv.org/abs/1807.11164)
+- Mnasnet 2018.07.xx / [論文](https://arxiv.org/abs/1807.11626)
+- [Octave Convolution 2019.04.xx](./cv_002_classification/octave.md) / [論文](https://arxiv.org/abs/1904.05049)
+- MobileNetV3 2019.05.xx / [論文](https://arxiv.org/abs/1905.02244)
+- [EfficientNet 2019.05.xx](./cv_002_classification/efficientnet.md) / [論文](https://arxiv.org/abs/1905.11946)
+- [MixNet 2019.07.xx](./cv_002_classification/mixnet.md) / [論文](https://arxiv.org/abs/1907.09595)
+- Noisy Student 2019.11.11 / [論文](https://arxiv.org/abs/1911.04252)
+- [CSPNet 2019.11.27](./cv_002_classification/cspnet.md) / [論文](https://arxiv.org/abs/1911.11929)
   - DenseNetの更なる高速化。安価なGPUで動作することを念頭に改良。
   - ベースレイヤを2つに分割し、2つのパスで伝搬する情報を効率化している。
   - これは他のネットワークにも容易に適用可能で、計算量を10～20%削減し、さらに精度を向上。
 
-- [2020.03.xx] RegNet / [論文](https://arxiv.org/abs/2003.13678)
-- [2020.09.xx] Vision Transformer / [論文](https://openreview.net/forum?id=YicbFdNTTy)
-- [2020.12.xx] DeiT / [論文](https://arxiv.org/abs/2012.12877)
-- [2021.04.xx] EfficientNetV2] / [論文](https://arxiv.org/abs/2104.00298)
-- [2022.01.xx] ConvNeXt / [論文](https://arxiv.org/abs/2201.03545)
+- RegNet 2020.03.xx / [論文](https://arxiv.org/abs/2003.13678)
+- Vision Transformer 2020.09.xx / [論文](https://openreview.net/forum?id=YicbFdNTTy)
+- DeiT 2020.12.xx / [論文](https://arxiv.org/abs/2012.12877)
+- EfficientNetV2 2021.04.xx / [論文](https://arxiv.org/abs/2104.00298)
+- ConvNeXt 2022.01.xx / [論文](https://arxiv.org/abs/2201.03545)
 
 ## 参考
 
