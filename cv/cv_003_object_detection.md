@@ -141,6 +141,8 @@
   - 特徴量マップはFPN構造を使い複数の解像度を使用
   - 応用がしやすいため参照されることが多いanchor freeモデル
 
+- HRNet, 2019/04/09, 未調査 / [論文](https://arxiv.org/abs/1904.04514) / [実装例](https://paperswithcode.com/paper/190807919)
+
 - [CenterNet](./cv_003_object_detection/centernet.md), 2019/04/16, 1stage (anchor free) / [論文](https://arxiv.org/abs/1904.07850) / [実装例](https://paperswithcode.com/paper/objects-as-points)
   - CornerNetと同様にheatmapを推定するanchor freeモデル
   - CenterNetでは中心位置のheatmapを推定する

@@ -31,3 +31,6 @@
   * [YOLOF           ](cv/cv_003_object_detection/yolo_f.md)
   * [OTA             ](cv/cv_003_object_detection/ota.md)
   * [YOLOX           ](cv/cv_003_object_detection/yolo_x.md)
+* [セグメンテーション](cv/cv_004_segmentation.md)
+* [姿勢推定](cv/cv_005_pose_estimation.md)
+* [その他のテクニック](cv/cv_500_other_technique.md)
