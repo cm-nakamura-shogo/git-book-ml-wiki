@@ -47,45 +47,24 @@
 ## 主要なモデル一覧
 
 - [HOG+SVM(2005/06/20)](./cv_003_object_detection/hog_svm.md)
-  - [論文]
   - サマリ
     - CNN誕生前のモデルで良く参照された論文
     - HOGはpixel変化を捉える特徴量
     - HOG特徴量を用いてSVMで多クラス分類する
     - NMSはこの時から使われている
+  - [論文](http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
+- [R-CNN(2013/11/11)](./cv_003_object_detection/r_cnn.md)
+  - サマリ
+    - CNN適用の先駆け論文
+    - selective searchという古典的手法で領域候補を抽出
+    - 候補領域をリサイズしてCNNに入力して特徴量ベクトルを得る
+    - その後段で1-class SVMとbounding boxのregressionを実施
+  - [論文](https://arxiv.org/abs/1311.2524)
+  - [実装例](https://paperswithcode.com/paper/rich-feature-hierarchies-for-accurate-object)
 
 <table>
   <thead><tr><th>名前</th><th>発表年月日</th><th>サマリ</th><th>カテゴリ</th><th>backbone</th><th>リンク</th></tr></thead>
   <tbody>
-    <tr>
-      <td>HOG+SVM</td><td>2005/06/20</td>
-      <td>
-        ・CNN誕生前のモデルで良く参照された論文<br>
-        ・HOGはpixel変化を捉える特徴量<br>
-        ・HOG特徴量を用いてSVMで多クラス分類する<br>
-        ・NMSはこの時から使われている
-      </td>
-      <td>None</td><td>None</td>
-      <td>
-        <a href="./cv_003_object_detection/hog_svm.md">解説</a><br>
-        <a href="http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">論文</a>
-      </td>
-    </tr>
-    <tr>
-      <td>R-CNN</td><td>2013/11/11</td>
-      <td>
-        ・CNN適用の先駆け論文<br>
-        ・selective searchという古典的手法で領域候補を抽出<br>
-        ・候補領域をリサイズしてCNNに入力して特徴量ベクトルを得る<br>
-        ・その後段で1-class SVMとbounding boxのregressionを実施
-      </td>
-      <td>2stage</td><td>AlexNet<br>VGG16</td>
-      <td>
-        <a href="./cv_003_object_detection/r_cnn.md">解説</a><br>
-        <a href="https://arxiv.org/abs/1311.2524">論文</a><br>
-        <a href="https://paperswithcode.com/paper/rich-feature-hierarchies-for-accurate-object">paperswithcode</a>
-      </td>
-    </tr>
     <tr>
       <td>SPP-net</td><td>2014/06/18</td>
       <td>
