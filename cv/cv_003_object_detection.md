@@ -107,6 +107,104 @@
       </td>
     </tr>
     <tr>
+      <td>Faster R-CNN</td><td>2015/06/04</td>
+      <td>
+        ・領域候補を抽出するselective searchをCNNで置き換え<br>
+        ・このNetworkをRPN(Region Proposal Network)と呼ぶ<br>
+        ・RPNには9個のanchor boxを使用し領域有無とbounding box回帰を実施
+      </td>
+      <td>2stage</td><td>VGG16<br>ResNet101</td>
+      <td>
+        <a href="./cv_003_object_detection/faster_r_cnn.md">解説</a><br>
+        <a href="https://arxiv.org/abs/1506.01497">論文</a><br>
+        <a href="https://paperswithcode.com/paper/faster-r-cnn-towards-real-time-object">paperswithcode</a>
+      </td>
+    </tr>
+    <tr>
+      <td>YOLO</td><td>2015/06/08</td>
+      <td>
+        ・領域検出とclassificationの同時学習を実現(You only look once)<br>
+        ・入力画像をグリッド分割し、各グリッドに固定数のbounding box回帰を実施
+      </td>
+      <td>1stage<br>(anchor free)</td><td>独自実装</td>
+      <td>
+        <a href="./cv_003_object_detection/yolo.md">解説</a><br>
+        <a href="https://arxiv.org/abs/1506.02640">論文</a><br>
+        <a href="https://paperswithcode.com/paper/you-only-look-once-unified-real-time-object">paperswithcode</a>
+      </td>
+    </tr>
+    <tr>
+      <td>SSD</td><td>2015/12/08</td>
+      <td>
+        ・YOLOと同じく領域検出とclassificationの同時学習を実現(Single shot detector)<br>
+        ・backboneの途中層の高解像な特徴量マップを使用<br>
+        ・特徴量マップの解像度毎に様々な大きさのanchor boxを定義
+      </td>
+      <td>1stage<br>(anchor box)</td><td>VGG16</td>
+      <td>
+        <a href="./cv_003_object_detection/ssd.md">解説</a><br>
+        <a href="https://arxiv.org/abs/1512.02325">論文</a><br>
+        <a href="https://paperswithcode.com/paper/ssd-single-shot-multibox-detector">paperswithcode</a>
+      </td>
+    </tr>
+    <tr>
+      <td>R-FCN</td><td>2016/05/20</td>
+      <td>
+        ・RoI Pooling以降の全結合層をCNN化したモデル<br>
+        ・RoI Poolingの前段にposition sensitive mapという畳み込みを追加<br>
+        ・その後段でRoI Poolingを実施する構成
+      </td>
+      <td>2stage</td><td>ResNet-101</td>
+      <td>
+        <a href="./cv_003_object_detection/r_fcn.md">解説</a><br>
+        <a href="https://arxiv.org/abs/1605.06409">論文</a><br>
+        <a href="https://paperswithcode.com/paper/r-fcn-object-detection-via-region-based-fully">paperswithcode</a>
+      </td>
+    </tr>
+    <tr>
+      <td>FPN</td><td>2016/12/09</td>
+      <td>
+        ・ピラミッド構造の特徴量マップを実現したモデル<br>
+        ・ベースはFaster R-CNNであり、RPNとclassificationどちらもピラミッド構造化<br>
+        ・FPNの考え方は現在まで採用されており重要な論文
+      </td>
+      <td>2stage</td><td>ResNet-50<br>ResNet-101</td>
+      <td>
+        <a href="./cv_003_object_detection/fpn.md">解説</a><br>
+        <a href="https://arxiv.org/abs/1612.03144">論文</a><br>
+        <a href="https://paperswithcode.com/paper/feature-pyramid-networks-for-object-detection">paperswithcode</a>
+      </td>
+    </tr>
+    <tr>
+      <td>YOLOv2(YOLO9000)</td><td>2016/12/25</td>
+      <td>
+        ・YOLOをベースに改良を実施<br>
+        ・入力の高解像化、anchor boxの導入、高解像な特徴量マップの使用など<br>
+        ・それ以外に9000クラスまで分類可能なWordTreeというアーキテクチャを構築
+      </td>
+      <td>1stage<br>(anchor box)</td><td>Darknet-19</td>
+      <td>
+        <a href="./cv_003_object_detection/yolo_v2.md">解説</a><br>
+        <a href="https://arxiv.org/abs/1612.08242">論文</a><br>
+        <a href="https://paperswithcode.com/paper/yolo9000-better-faster-stronger">paperswithcode</a>
+      </td>
+    </tr>
+    <tr>
+      <td>RetinaNet</td><td>2017/08/07</td>
+      <td>
+        ・ロス計算(CE)をサンプルの難易度によって動的に変化させるFocal lossを提案<br>
+        ・ベース構造はFPNのようなピラミッド構成だが、1stageとなっている。<br>
+        ・シンプルな構成のため現在でもベースラインされることも多い<br>
+        ・Focal loss自体も現在でも使用されている重要な論文
+      </td>
+      <td>1stage<br>(anchor box)</td><td>ResNet-50<br>ResNet-101</td>
+      <td>
+        <a href="./cv_003_object_detection/retinanet.md">解説</a><br>
+        <a href="https://arxiv.org/abs/1708.02002">論文</a><br>
+        <a href="https://paperswithcode.com/paper/focal-loss-for-dense-object-detection">paperswithcode</a>
+      </td>
+    </tr>
+    <tr>
       <td>Mask R-CNN</td><td>2017/03/20</td>
       <td>
         ・Instance Segmentation用のheadを追加したMulti-taskモデル<br>
