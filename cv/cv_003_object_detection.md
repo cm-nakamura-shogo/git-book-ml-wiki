@@ -107,20 +107,6 @@
       </td>
     </tr>
     <tr>
-      <td>Faster R-CNN</td><td>2015/06/04</td>
-      <td>
-        ・領域候補を抽出するselective searchをCNNで置き換え<br>
-        ・このNetworkをRPN(Region Proposal Network)と呼ぶ<br>
-        ・RPNには9個のanchor boxを使用し領域有無とbounding box回帰を実施
-      </td>
-      <td>2stage</td><td>VGG16<br>ResNet101</td>
-      <td>
-        <a href="./cv_003_object_detection/faster_r_cnn.md">解説</a><br>
-        <a href="https://arxiv.org/abs/1506.01497">論文</a><br>
-        <a href="https://paperswithcode.com/paper/faster-r-cnn-towards-real-time-object">paperswithcode</a>
-      <td>
-    </tr>
-    <tr>
       <td>YOLO</td><td>2015/06/08</td>
       <td>
         ・領域検出とclassificationの同時学習を実現(You only look once)<br>
