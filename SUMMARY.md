@@ -1,3 +1,3 @@
 # Table of contents
 
-* [CV](README.md)
+* [CV](cv.md)
