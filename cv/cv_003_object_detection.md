@@ -65,7 +65,7 @@
   - これにより最大2000毎程度ある領域候補のCNN処理が1回で実現可能
   - 切り出した特徴量マップはSPPで固定長の特徴量に変換して後段で処理
 
-- [Fast R-CNN](./cv_003_object_detection/spp_net.md) 2015/04/30, 2stage / [論文](https://arxiv.org/abs/1504.08083) / [実装例](https://paperswithcode.com/paper/fast-r-cnn)
+- [Fast R-CNN](./cv_003_object_detection/fast_r_cnn.md) 2015/04/30, 2stage / [論文](https://arxiv.org/abs/1504.08083) / [実装例](https://paperswithcode.com/paper/fast-r-cnn)
   - Multi-task lossによりclassificationとbounding box推定を同時学習
   - 固定長の特徴量変換としてSPPの代わりにRoI Poolingを使用
   - RoI Poolingは両機をグリッド分割し各グリッドに対してpooling処理を実施

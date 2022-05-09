@@ -6,7 +6,7 @@
   * [HOG+SVM         ](cv/cv_003_object_detection/hog_svm.md)
   * [R-CNN           ](cv/cv_003_object_detection/r_cnn.md)
   * [SPP-net         ](cv/cv_003_object_detection/spp_net.md)
-  * [Fast R-CNN      ](cv/cv_003_object_detection/spp_net.md)
+  * [Fast R-CNN      ](cv/cv_003_object_detection/fast_r_cnn.md)
   * [Faster R-CNN    ](cv/cv_003_object_detection/faster_r_cnn.md)
   * [YOLO            ](cv/cv_003_object_detection/yolo.md)
   * [SSD             ](cv/cv_003_object_detection/ssd.md)
