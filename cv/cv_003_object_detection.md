@@ -51,29 +51,22 @@
   - HOGはpixel変化を捉える特徴量
   - HOG特徴量を用いてSVMで多クラス分類する
   - NMSはこの時から使われている
-- [R-CNN(2013/11/11)](./cv_003_object_detection/r_cnn.md) / [論文](https://arxiv.org/abs/1311.2524) / [実装例](https://paperswithcode.com/paper/rich-feature-hierarchies-for-accurate-object)
+
+- [R-CNN(2013/11/11, 2stage)](./cv_003_object_detection/r_cnn.md) / [論文](https://arxiv.org/abs/1311.2524) / [実装例](https://paperswithcode.com/paper/rich-feature-hierarchies-for-accurate-object)
   - CNN適用の先駆け論文
   - selective searchという古典的手法で領域候補を抽出
   - 候補領域をリサイズしてCNNに入力して特徴量ベクトルを得る
   - その後段で1-class SVMとbounding boxのregressionを実施
 
+- [SPP-net(2014/06/18, 2stage)](cv_003_object_detection/spp_net.md) / [論文](https://arxiv.org/abs/1406.4729) / [実装例](https://paperswithcode.com/paper/spatial-pyramid-pooling-in-deep-convolutional)
+  - 領域候補の切り出しを特徴量マップに対して実施し効率化
+  - これにより最大2000毎程度ある領域候補のCNN処理が1回で実現可能
+  - 切り出した特徴量マップはSPPで固定長の特徴量に変換して後段で処理
+
+
 <table>
   <thead><tr><th>名前</th><th>発表年月日</th><th>サマリ</th><th>カテゴリ</th><th>backbone</th><th>リンク</th></tr></thead>
   <tbody>
-    <tr>
-      <td>SPP-net</td><td>2014/06/18</td>
-      <td>
-        ・領域候補の切り出しを特徴量マップに対して実施し効率化<br>
-        ・これにより最大2000毎程度ある領域候補のCNN処理が1回で実現可能<br>
-        ・切り出した特徴量マップはSPPで固定長の特徴量に変換して後段で処理
-      </td>
-      <td>2stage</td><td>ZFNet<br>AlexNet<br>OverFeat</td>
-      <td>
-        <a href="./cv_003_object_detection/spp_net.md">解説</a><br>
-        <a href="https://arxiv.org/abs/1406.4729">論文</a><br>
-        <a href="https://paperswithcode.com/paper/spatial-pyramid-pooling-in-deep-convolutional">paperswithcode</a>
-      </td>
-    </tr>
     <tr>
       <td>Fast R-CNN</td><td>2015/04/30</td>
       <td>
