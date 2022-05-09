@@ -46,12 +46,12 @@
 
 ## 主要なモデル一覧
 
-- [HOG+SVM(2005/06/20)](./cv_003_object_detection/hog_svm.md) [論文](http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
+- [HOG+SVM(2005/06/20)](./cv_003_object_detection/hog_svm.md) / [論文](http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
   - CNN誕生前のモデルで良く参照された論文
   - HOGはpixel変化を捉える特徴量
   - HOG特徴量を用いてSVMで多クラス分類する
   - NMSはこの時から使われている
-- [R-CNN(2013/11/11)](./cv_003_object_detection/r_cnn.md) [論文](https://arxiv.org/abs/1311.2524) [実装例](https://paperswithcode.com/paper/rich-feature-hierarchies-for-accurate-object)
+- [R-CNN(2013/11/11)](./cv_003_object_detection/r_cnn.md) / [論文](https://arxiv.org/abs/1311.2524) / [実装例](https://paperswithcode.com/paper/rich-feature-hierarchies-for-accurate-object)
   - CNN適用の先駆け論文
   - selective searchという古典的手法で領域候補を抽出
   - 候補領域をリサイズしてCNNに入力して特徴量ベクトルを得る
