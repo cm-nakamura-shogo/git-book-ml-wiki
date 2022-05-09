@@ -3,9 +3,9 @@
 ## 主要なモデル一覧
 
 - [LeNet 1989](./cv_002_classification/lenet.md) / [論文](https://direct.mit.edu/neco/article-abstract/1/4/541/5515/Backpropagation-Applied-to-Handwritten-Zip-Code?redirectedFrom=fulltext)
-- [AlexNet 2012.09](./cv_002_classification/alexnet.md) / [論文](https://dl.acm.org/doi/abs/10.1145/3065386)
+- [AlexNet 2012.09 NeurIPS'2012](./cv_002_classification/alexnet.md) / [論文](https://dl.acm.org/doi/abs/10.1145/3065386)
 - [VGGNet 2014.09.04 ICLR'2015](./cv_002_classification/vgg.md) / [論文](https://arxiv.org/abs/1409.1556)
-- GoogLeNet(Inception-v1) 2014.09.17 / [論文](https://arxiv.org/abs/1409.4842)
+- GoogLeNet(Inception-v1) 2014.09.17 CVPR'2015 / [論文](https://arxiv.org/abs/1409.4842)
 - [ResNet 2015.12.10 CVPR'2016](./cv_002_classification/resnet.md) / [論文](https://arxiv.org/abs/1512.03385)
 - Inception-v4 2016.02.23 / [論文](https://arxiv.org/abs/1602.07261)
 - SqueezeNet 2016.02.24 / [論文](https://arxiv.org/abs/1602.07360)
@@ -15,14 +15,14 @@
   - また連結方法は加算ではなく、concatenateすることにより情報が消えることを防ぐ。
   - ResNetよりモデル規模を縮小し、性能も改善。
 
-- Xception 2016.01.07 / [論文](https://arxiv.org/abs/1610.02357)
+- Xception 2016.01.07 CVPR'2017 / [論文](https://arxiv.org/abs/1610.02357)
 - [ResNeXt 2016.11.16 CVPR'2017](./cv_002_classification/resnext.md) / [論文](https://arxiv.org/abs/1611.05431)
 - [MobileNet 2017.04.17](./cv_002_classification/mobilenet.md) / [論文](https://arxiv.org/abs/1704.04861)
-- ShuffleNet 2017.07.04 / [論文](https://arxiv.org/abs/1707.01083)
+- ShuffleNet 2017.07.04 CVPR'2018 / [論文](https://arxiv.org/abs/1707.01083)
 - SENet 2017.09.05 CVPR'2018 / [論文](https://arxiv.org/abs/1709.01507)
 - [MobileNetV2 2018.01.13 CVPR'2018](./cv_002_classification/mobilenet_v2.md) / [論文](https://arxiv.org/abs/1801.04381)
-- [Big-Little Network 2018.07.10](./cv_002_classification/big_little.md) / [論文](https://arxiv.org/abs/1807.03848)
-- ShuffleNetV2 2018.07.30 / [論文](https://arxiv.org/abs/1807.11164)
+- [Big-Little Network 2018.07.10 ICLR'2019](./cv_002_classification/big_little.md) / [論文](https://arxiv.org/abs/1807.03848)
+- ShuffleNetV2 2018.07.30 ECCV'2018 / [論文](https://arxiv.org/abs/1807.11164)
 - Mnasnet 2018.07.31 CVPR'2019 / [論文](https://arxiv.org/abs/1807.11626)
 - [Octave Convolution 2019.04.10 ICCV'2019](./cv_002_classification/octave.md) / [論文](https://arxiv.org/abs/1904.05049)
 - MobileNetV3 2019.05.06 ICCV'2019 / [論文](https://arxiv.org/abs/1905.02244)
