@@ -46,6 +46,9 @@
 
 ## 主要なモデル一覧
 
+- [解説](cv_003_object_detection/hog_svm.md)
+- [解説](./cv_003_object_detection/hog_svm.md)
+
 <table>
   <thead><tr><th>名前</th><th>発表年月日</th><th>サマリ</th><th>カテゴリ</th><th>backbone</th><th>リンク</th></tr></thead>
   <tbody>
