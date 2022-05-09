@@ -2,7 +2,7 @@
 
 ## 主要なモデル一覧
 
-- [LeNet 1989](cv_002_classification/lenet.md) / [論文](https://direct.mit.edu/neco/article-abstract/1/4/541/5515/Backpropagation-Applied-to-Handwritten-Zip-Code?redirectedFrom=fulltext)
+- [LeNet 1989](./cv_002_classification/lenet.md) / [論文](https://direct.mit.edu/neco/article-abstract/1/4/541/5515/Backpropagation-Applied-to-Handwritten-Zip-Code?redirectedFrom=fulltext)
 - [AlexNet 2012.09](./cv_002_classification/alexnet.md) / [論文](https://dl.acm.org/doi/abs/10.1145/3065386)
 - [VGGNet 2014.09.04 ICLR'2015](./cv_002_classification/vgg.md) / [論文](https://arxiv.org/abs/1409.1556)
 - GoogLeNet(Inception-v1) 2014.09.17 / [論文](https://arxiv.org/abs/1409.4842)
