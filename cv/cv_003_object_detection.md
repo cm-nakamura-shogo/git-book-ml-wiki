@@ -46,8 +46,13 @@
 
 ## 主要なモデル一覧
 
-- [解説](cv_003_object_detection/hog_svm.md)
-- [解説](./cv_003_object_detection/hog_svm.md)
+- [HOG+SVM(2005/06/20)](./cv_003_object_detection/hog_svm.md)
+  - [論文]
+  - サマリ
+    - CNN誕生前のモデルで良く参照された論文
+    - HOGはpixel変化を捉える特徴量
+    - HOG特徴量を用いてSVMで多クラス分類する
+    - NMSはこの時から使われている
 
 <table>
   <thead><tr><th>名前</th><th>発表年月日</th><th>サマリ</th><th>カテゴリ</th><th>backbone</th><th>リンク</th></tr></thead>
