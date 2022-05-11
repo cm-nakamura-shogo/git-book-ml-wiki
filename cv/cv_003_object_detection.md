@@ -177,6 +177,8 @@
 
 - PP-YOLO 2020.07.23, 未調査 / [論文](https://arxiv.org/abs/2007.12099) / [実装例](https://paperswithcode.com/paper/pp-yolo-an-effective-and-efficient)
 
+- Scaled-YOLOv4 2020.11.16 CVPR'2021, 未調査 / [論文](https://arxiv.org/abs/2011.08036) / 
+
 - [PSS 2021.01.28](./cv_003_object_detection/pss.md), 1stage (anchor free) / [論文](https://arxiv.org/abs/2101.11782) / [実装例](https://paperswithcode.com/paper/object-detection-made-simpler-by-eliminating)
   - NMSフリーなモデルを学習するためにPSSヘッドを導入した論文
   - PSSヘッドにより1つの正解に対して1つだけ正例を出力するよう学習
@@ -197,6 +199,8 @@
 
 - PP-YOLOv2 2021.04.21, 未調査 / [論文](https://arxiv.org/abs/2104.10419) / [実装例](https://paperswithcode.com/paper/pp-yolov2-a-practical-object-detector)
 
+- YOLOR 2021.05.10, 未調査 / [論文](https://arxiv.org/abs/2105.04206) / [実装例](https://paperswithcode.com/paper/you-only-learn-one-representation-unified)
+
 - [YOLOX 2021.07.18](./cv_003_object_detection/yolo_x.md), 1stage (anchor free) / [論文](https://arxiv.org/abs/2107.08430) / [実装例](https://paperswithcode.com/paper/yolox-exceeding-yolo-series-in-2021)
   - YOLOに先端のラベル割り当て(OTA)やアンカーレス方式を導入した
   - OTAをより高速にするため近似計算するSimOTAを用いている
@@ -207,6 +211,8 @@
 - YOLOP 2021.08.25, 未調査 / [論文](https://arxiv.org/abs/2108.11250) / [実装例](https://paperswithcode.com/paper/yolop-you-only-look-once-for-panoptic-driving)
 
 - PP-PicoDet 2021.11.01, 未調査 / [論文](https://arxiv.org/abs/2111.00902) / [実装例](https://paperswithcode.com/paper/pp-picodet-a-better-real-time-object-detector)
+
+- Swin Transformer V2 2021.11.18, 未調査 / [論文](https://arxiv.org/abs/2111.09883) / [実装例](https://paperswithcode.com/paper/swin-transformer-v2-scaling-up-capacity-and)
 
 - PP-YOLOE 2022.03.30, 未調査 / [論文](https://arxiv.org/abs/2203.16250) / [実装例](https://paperswithcode.com/paper/pp-yoloe-an-evolved-version-of-yolo)
 
