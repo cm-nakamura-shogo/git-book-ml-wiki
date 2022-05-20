@@ -48,5 +48,6 @@
   * [セグメンテーション](cv/cv_004_segmentation.md)
   * [姿勢推定](cv/cv_005_pose_estimation.md)
   * [その他のテクニック](cv/cv_500_other_technique.md)]
+* [アノテーションツール](annotation/annotation.md)
 * [記事の置き場](articles/articles.md)
 * [書籍        ](books/books.md)
