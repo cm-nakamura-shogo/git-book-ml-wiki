@@ -214,6 +214,16 @@
 
 - Swin Transformer V2 2021.11.18, 未調査 / [論文](https://arxiv.org/abs/2111.09883) / [実装例](https://paperswithcode.com/paper/swin-transformer-v2-scaling-up-capacity-and)
 
+- Detic 2022.01.07, 未調査 / [論文](https://arxiv.org/abs/2201.02605) / [実装例](https://paperswithcode.com/paper/detecting-twenty-thousand-classes-using-image)
+  - FAIRによる論文で画像分類のデータセットで物体検出を学習する手法。
+  - また検出時にanchor boxも不要。
+  - 参考
+    - [【物体検出】2万種類の物体検出ができるDeticを試してみる　〜デモからテストまで〜](https://tt-tsukumochi.com/archives/41)
+
+- SAHI 2022.02.14, 未調査 / [論文](https://arxiv.org/abs/2202.06934) / [実装例](https://paperswithcode.com/paper/slicing-aided-hyper-inference-and-fine-tuning)
+  - スライシング支援推論と微調整により小さなオブジェクトを検出するための手法
+  - [🔰YOLOv5で実装する物体検出入門｜第6回：小さなオブジェクトを検出するためのSAHIで物体検出をしてみる](https://tt-tsukumochi.com/archives/1952)
+
 - PP-YOLOE 2022.03.30, 未調査 / [論文](https://arxiv.org/abs/2203.16250) / [実装例](https://paperswithcode.com/paper/pp-yoloe-an-evolved-version-of-yolo)
 
 - ViTDet 2022.03.30, 未調査 / [論文](https://arxiv.org/abs/2203.16527) / [実装例](https://paperswithcode.com/paper/exploring-plain-vision-transformer-backbones)

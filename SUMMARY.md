@@ -49,4 +49,6 @@
   * [姿勢推定          ](cv/cv_005_pose_estimation.md)
   * [その他のテクニック](cv/cv_500_other_technique.md)
 * [アノテーションツール](annotation/annotation.md)
+* フレームワーク
+  * [YOLOv5](framework/yolo_v5.md)
 * [記事の置き場        ](articles/articles.md)
