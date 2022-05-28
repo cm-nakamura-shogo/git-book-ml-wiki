@@ -47,7 +47,9 @@
   * 平均された1つのh次元ベクトルにV次元に拡大するための行列W'(shape=(V,h))を乗算する。
   * 1つのV次元ベクトルにsoftmax処理し予測値を得る。
 
-![](./img/nlp_word2vec_2022-05-28-19-36-06.png)
+<div align="center">
+<img src="./img/nlp_word2vec_2022-05-28-19-36-06.png" height="400">
+</div>
 
 * 分散表現の抽出
   * V次元をh次元に圧縮する行列W(shape=(h,V))に着目する。
@@ -61,7 +63,9 @@
   * CBoWとは逆に、中央の単語から前後C個の単語を予測する
   * CBoWとは異なりタスクは非常に難しいが、最終的にはWを得ることがすることが目的であるため問題ない。
 
-![](./img/nlp_word2vec_2022-05-28-19-36-32.png)
+<div align="center">
+<img src="./img/nlp_word2vec_2022-05-28-19-36-32.png" height="400">
+</div>
 
 ### hierarchical softmax
 
