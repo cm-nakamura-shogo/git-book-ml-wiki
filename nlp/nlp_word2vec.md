@@ -47,7 +47,7 @@
   * 平均された1つのh次元ベクトルにV次元に拡大するための行列W'(shape=(V,h))を乗算する。
   * 1つのV次元ベクトルにsoftmax処理し予測値を得る。
 
-<div align="center">
+<div align="center" width="800">
 <img src="./img/nlp_word2vec_2022-05-28-19-36-06.png" height="400">
 </div>
 
