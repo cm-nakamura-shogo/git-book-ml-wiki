@@ -50,6 +50,7 @@
   * [その他のテクニック](cv/cv_500_other_technique.md)
 * [アノテーションツール](annotation/annotation.md)
 * フレームワーク
+  * [データ拡張用    ](framework/augmentation.md)
   * [motpy           ](framework/motpy.md)
   * [チューニング戦略](framework/tuning.d)
   * [YOLOv5          ](framework/yolo_v5.md)
