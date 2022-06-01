@@ -48,6 +48,8 @@
   * [セグメンテーション](cv/cv_004_segmentation.md)
   * [姿勢推定          ](cv/cv_005_pose_estimation.md)
   * [その他のテクニック](cv/cv_500_other_technique.md)
+* NLP
+  * [Word2Vec](nlp/nlp_word2vec.md)
 * [アノテーションツール](annotation/annotation.md)
 * フレームワーク
   * [データ拡張用    ](framework/augmentation.md)
