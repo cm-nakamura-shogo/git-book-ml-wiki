@@ -52,6 +52,7 @@
   * [入門    ](nlp/nlp_summary.md)
   * [Word2Vec](nlp/nlp_word2vec.md)
   * [tf-idf  ](nlp/nlp_tf_idf.md)
+  * [BM25    ](nlp/bm25.md)
 * [アノテーションツール](annotation/annotation.md)
 * フレームワーク
   * [データ拡張用    ](framework/augmentation.md)
