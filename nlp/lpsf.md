@@ -92,4 +92,4 @@ numDocsは全文書数、docFreqはそのうちq_iが出現した文書数を表
 
 * [Lucene’s Practical Scoring Function | Elasticsearch: The Definitive Guide [2.x] | Elastic](https://www.elastic.co/guide/en/elasticsearch/guide/current/practical-scoring-function.html)
   * バージョンが古いため、今Lucene's Practical Scoring Functionがどのような扱いなのかは分からない。
-* 
+* [【自然言語処理】Elasticsearch 徹底解説 - スコアリングのロジックについて【Elasticsearch への道③】#086 #VRアカデミア - YouTube](https://www.youtube.com/watch?v=V7WVdlUSOco)
