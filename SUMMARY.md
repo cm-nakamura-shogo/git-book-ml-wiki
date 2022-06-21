@@ -51,6 +51,7 @@
 * NLP
   * [Word2Vec](nlp/nlp_word2vec.md)
   * [tf-idf  ](nlp/nlp_tf_idf.md)
+* [GNN](gnn/gnn.md)
 * [アノテーションツール](annotation/annotation.md)
 * フレームワーク
   * [データ拡張用    ](framework/augmentation.md)
