@@ -49,12 +49,16 @@
   * [姿勢推定          ](cv/cv_005_pose_estimation.md)
   * [その他のテクニック](cv/cv_500_other_technique.md)
 * NLP
-  * [Word2Vec](nlp/nlp_word2vec.md)
-  * [tf-idf  ](nlp/nlp_tf_idf.md)
+  * [入門                               ](nlp/nlp_summary.md)
+  * [Word2Vec                           ](nlp/nlp_word2vec.md)
+  * [tf-idf                             ](nlp/nlp_tf_idf.md)
+  * [BM25                               ](nlp/bm25.md)
+  * [Lucene's Practical Scoring Function](nlp/lpsf.md)
 * [GNN](gnn/gnn.md)
 * [アノテーションツール](annotation/annotation.md)
 * フレームワーク
   * [データ拡張用    ](framework/augmentation.md)
+  * [HuggingFace     ](framework/huggingface.md)
   * [motpy           ](framework/motpy.md)
   * [チューニング戦略](framework/tuning.d)
   * [YOLOv5          ](framework/yolo_v5.md)

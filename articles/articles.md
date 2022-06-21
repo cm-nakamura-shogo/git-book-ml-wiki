@@ -1,10 +1,12 @@
 # 記事のスクラップ
 
-
 ## 一般
 
 - 敵対的学習を使う場合、活性化関数を修正した方が良いかもしれないという話
   - https://ai-scholar.tech/articles/adversarial-perturbation/smooth-adversarial-training
+* Poincare Embeddings
+  * [異空間への埋め込み！Poincare Embeddingsが拓く表現学習の新展開 - ABEJA Tech Blog](https://tech-blog.abeja.asia/entry/poincare-embeddings)
+  * 双曲空間に埋め込めば非常に低次元で表現できる埋め込みベクトル。
 
 ## バイオ系
 
