@@ -331,6 +331,10 @@
 
 ## 実装
 
+- tinyモデルのアーキをまとめた。
+
+![](./svg/yolov7_tiny.drawio)
+
 - head部は以下の３パターンがある。
   - Detect ... 通常の処理
   - IDetect ... YOLORのImplicit処理が入っている
