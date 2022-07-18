@@ -177,6 +177,8 @@
 
 - PP-YOLO 2020.07.23, 未調査 / [論文](https://arxiv.org/abs/2007.12099) / [実装例](https://paperswithcode.com/paper/pp-yolo-an-effective-and-efficient)
 
+- [Orthogonal Sphere Regularization (2020-09-22)](./cv_003_object_detection/orthogonal_sphere_regularization.md) / [arXiv](https://arxiv.org/abs/2009.10762)
+
 - Scaled-YOLOv4 2020.11.16 CVPR'2021, 未調査 / [論文](https://arxiv.org/abs/2011.08036) / 
 
 - [PSS 2021.01.28](./cv_003_object_detection/pss.md), 1stage (anchor free) / [論文](https://arxiv.org/abs/2101.11782) / [実装例](https://paperswithcode.com/paper/object-detection-made-simpler-by-eliminating)
@@ -227,6 +229,8 @@
 - PP-YOLOE 2022.03.30, 未調査 / [論文](https://arxiv.org/abs/2203.16250) / [実装例](https://paperswithcode.com/paper/pp-yoloe-an-evolved-version-of-yolo)
 
 - ViTDet 2022.03.30, 未調査 / [論文](https://arxiv.org/abs/2203.16527) / [実装例](https://paperswithcode.com/paper/exploring-plain-vision-transformer-backbones)
+
+- [YOLOv7 (2022-07-06)](./cv_003_object_detection/yolo_v7.md) / [aiXiv](https://arxiv.org/abs/2207.02696) / [Papers With Code](https://paperswithcode.com/paper/yolov7-trainable-bag-of-freebies-sets-new)
 
 
 ## 参考

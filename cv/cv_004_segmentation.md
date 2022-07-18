@@ -16,5 +16,8 @@
   - https://arxiv.org/abs/1505.04597
   - U-Net構造といわれる階層的なskip-connectionにより高解像データを失わない工夫をしたモデル。
 
+- [2018/07/18] UNet++: A Nested U-Net Architecture for Medical Image Segmentation
+  - [https://arxiv.org/abs/1807.10165](https://arxiv.org/abs/1807.10165)
+
 - [2022/03/24] Sparse Instance Activation for Real-Time Instance Segmentation
   - https://arxiv.org/abs/2203.12827
