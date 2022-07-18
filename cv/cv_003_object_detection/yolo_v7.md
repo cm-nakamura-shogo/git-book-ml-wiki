@@ -333,7 +333,7 @@
 
 - tinyモデルのアーキをまとめた。
 
-![](./svg/yolov7_tiny.drawio)
+![](./svg/yolov7_tiny.drawio.svg)
 
 - head部は以下の３パターンがある。
   - Detect ... 通常の処理
