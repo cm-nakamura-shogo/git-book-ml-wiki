@@ -253,6 +253,8 @@
 
 - 以下がアーキテクチャの一覧。
 
+|||
+|:---|:---|
 | YOLOv7-tiny | エッジGPU用基本モデル |
 | YOLOv7 | ノーマルGPU用基本モデル | 
 | YOLOv7-W6 | クラウドGPUの基本モデル |
@@ -331,14 +333,93 @@
 
 ## 実装
 
-- tinyモデルのアーキをまとめた。
+### tiny
+
+- tinyモデルのアーキをまとめた。図が小さくなってしまうが、大枠はpyramid構造が3回程度連続するPANet風である。
 
 ![](./svg/yolov7_tiny.drawio.svg)
 
-- head部は以下の３パターンがある。
-  - Detect ... 通常の処理
-  - IDetect ... YOLORのImplicit処理が入っている
-  - IAuxDetect ... IDetectに加えて、AuxHeadが入っている
+- キーとなるのは各部位の畳み込みが以下のような構成となっていることと思われる。(C5部分を抽出)
+
+![](./svg/yolov7_tiny_conv_block.drawio.svg)
+
+- またbackboneの最終層直後(C5の直後)に以下のようなSPPブロックが設置される。
+
+![](./svg/yolov7_tiny_spp_block.drawio.svg)
+
+- 以降は以下のようなupsampleを処理するconv blockが接続される。
+
+![](./svg/yolov7_tiny_spp_upconv_block.drawio.svg)
+
+- その後、再度downsample処理をする以下のブロックが接続される
+
+![](./svg/yolov7_tiny_downconv_block.drawio.svg)
+
+- 最終的な検出は、1/32, 1/16, 1/8解像度部分で行われる。
+- head部の最終段は、通常のDetect処理となる。
+- 各レイヤの活性化関数は、LeakyReLU(0.1)が使用される。
+
+### normal
+
+- 各ブロックは以下のような構成に変わっている。(C5部分を抽出)
+
+![](./svg/yolov7_normal_conv_block.drawio.svg)
+
+- 変わっていることとしては、右側のcomputation blockの畳み込みが深くなっていること。
+- おそらくこれがELANと考えられる。
+- 加えてダウンサンプリング処理がmaxpoolingと畳み込み２系統のconcatになっている点である。
+
+- tinyのSPPブロックは、以下のようなSPPCSPCに代わっている。
+- 右側のcomputing blockのcv1,cv3,cv4の部分とcv5,cv6の部分で層数が増加していることが分かる。
+
+![](./svg/yolov7_normal_sppcspc_block.drawio.svg)
+
+- upsample部分は、接続数が増えており6つのconcatになっている。
+
+![](./svg/yolov7_normal_upconv_block.drawio.svg)
+
+- その後、再度downsample処理をする以下のブロックが接続される。
+- downsampleが2系統になり、computation blockが6系統になる。
+
+![](./svg/yolov7_normal_downconv_block.drawio.svg)
+
+- 最終的な検出は、1/32, 1/16, 1/8解像度部分で行われる。
+- 最終段の直前で、re-parameterization convがそれぞれの解像度に対して挿入される。
+  - RepConvN（identityなし）ではなく、通常のRepConvに見える。
+- head部の最終段は、通常のIDetect処理となり、YOLORのImplicit処理が入る。
+
+### w6
+
+- 先頭のdownsampleがReOrgという処理となっている。
+- ReOrgはYOLORでも登場しているが、縦横1つとばしにpixelを取得して4倍のチャンネルを作成し、かつdownsampleする手法である。
+
+- それ以降のdownsampleは通常のconv3x3で実行され、normalのような2系統ではなくなっている。
+  - おそらく2系統の方が高速なのであろうなので、妥当な気がする。
+- ELAN構成は、normalと変わりがないが、解像度が4種類に増加している（1/64が追加されている）。
+
+- 最終段はIAuxDetectとなっており、Auxは一つ手前のpyramid(updample後の部分)に接続される。
+
+### x
+
+- normalの拡張。
+- ELANが4->5系統に増加しており、ノード数も多少増加している。
+- ただし、upsampleや2回目のdownsampleは、6系統から5系統に変化しており、1回目のdownsampleのELANと同じ構成で統一されている。
+
+### e6,d6
+
+- w6の拡張
+- 1回目のELANはxと同様に4->5系統に増加しており、ノード数も増加。
+- ただし、upsampleや2回目のdownsampleは、xとは異なり、全系統を集める9系統という形になっており、統一的な拡張ではない。
+- また最初のReOrg以降のdownsampleが、DownCというモジュールになっているが、normalと同様の処理に見える。
+- e6とd6は、d6の方がより系統が増えているのみで、他には差がない。
+
+### e6e
+
+- e6の拡張で、E-ELANを導入している。
+- 要するに、ELAN自体が2系統に分離しており、その２系統のマージがされている。
+- 2系統のマージはconcatではなくaddになっている点も特徴。
+
+### 
 
 ## 参考
 
