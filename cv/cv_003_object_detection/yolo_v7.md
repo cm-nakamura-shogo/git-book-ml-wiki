@@ -349,7 +349,7 @@
 
 - 以降は以下のようなupsampleを処理するconv blockが接続される。
 
-![](./svg/yolov7_tiny_spp_upconv_block.drawio.svg)
+![](./svg/yolov7_tiny_upconv_block.drawio.svg)
 
 - その後、再度downsample処理をする以下のブロックが接続される
 
