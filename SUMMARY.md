@@ -60,6 +60,7 @@
   * [Lucene's Practical Scoring Function](nlp/lpsf.md)
   * [Transformer                        ](nlp/transformer.md)
 * [GNN](gnn/gnn.md)
+* [レコメンデーション](recommendation/recommendation.md)
 * [アノテーションツール](annotation/annotation.md)
 * [テスト](test/test.md)
 * フレームワーク

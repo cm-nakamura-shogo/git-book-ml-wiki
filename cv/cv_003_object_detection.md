@@ -26,6 +26,9 @@
 - これらの手順は煩雑なので、anchor boxを使わない方法も近年人気である。
   - 最終層を元画像の1/4程度に収めて、高解像で出力するCenterNetなど。
 
+- まとめの参考
+  - [Object Detection State of the Art 2022 | by Pedro Azevedo | Jun, 2022 | Medium](https://medium.com/@pedroazevedo6/object-detection-state-of-the-art-2022-ad750e0f6003)
+
 ## 学会
 
 - CVPR
