@@ -49,6 +49,7 @@
     * [YOLOv7          ](cv/cv_003_object_detection/yolo_v7.md)
   * [セグメンテーション](cv/cv_004_segmentation.md)
   * [姿勢推定          ](cv/cv_005_pose_estimation.md)
+  * [異常検出          ](cv/cv_006_anomaly.md)
   * [その他のテクニック](cv/cv_500_other_technique.md)
 * [NLP](nlp/nlp.md)
   * [入門                               ](nlp/nlp_summary.md)
